@@ -1,1 +1,0 @@
-# openhome_capability_faq
