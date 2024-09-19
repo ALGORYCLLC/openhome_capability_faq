@@ -8,7 +8,8 @@ from src.agent.capability_worker import CapabilityWorker
 
 PROMPT = """Here are some frequently asked questions and their answers:\n {faq_context} \n\n
             User's question: {user_question} \n
-            Please provide a relevant and relatively shorter but full of details answer or state that no relevant information is found if context is cintext has little or noformation realted to user's question."""
+            Don't repeat the question in your response
+            Please provide a relevant and relatively shorter (maximum 3 to 4 sentences long) but full of details answer or state that no relevant information is found if context is cintext has little or noformation realted to user's question."""
 
 class FaqCapability(MatchingCapability):
     worker: AgentWorker = None
